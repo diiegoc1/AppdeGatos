@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "mi-fuente";
+    src: url(src/HelveticaNowMicro-Medium.otf);
+}
+
+/* General Settings */
+body {
+    font-family: "mi-fuente";
+    background: linear-gradient(120deg, #1a1a2e, #16213e); /* Fondo degradado inicial */
+    background-size: 300% 300%; /* Tamaño mayor para crear el efecto de movimiento */
+    animation: gradientBackground 15s ease infinite; /* Animación del degradado */
+    color: #e0e0e0; /* Texto claro */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Animación para el fondo degradado */
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header Styles */
+h2 {
+    font-size: 2.5em;
+    color: #f1faee; /* Tono claro */
+    margin: 20px;
+    text-align: center;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(22, 33, 62, 0.9); /* Fondo oscuro del contenido con transparencia */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Titles */
+h3 {
+    font-size: 1.5em;
+    color: #4cc9f0; /* Celeste claro */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3a0ca3; /* Violeta */
+    padding-bottom: 5px;
+}
+
+/* Link Styles */
+a {
+    color: #7209b7; /* Violeta intenso */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #f72585; /* Magenta */
+}
+
+/* Image Styles */
+img {
+    width: 80%; /* Ajuste del tamaño de las imágenes */
+    max-width: 300px; /* Tamaño máximo para controlar la escala */
+    height: auto;
+    border-radius: 5px;
+    margin: 15px 0;
+    border: 2px solid #4cc9f0; /* Borde celeste claro */
+}
+
+/* List Styles */
+ul, ol {
+    padding-left: 0;
+    list-style-type: none;
+    margin: 15px 0;
+}
+
+ul li, ol li {
+    margin: 15px 0;
+    padding: 10px 15px;
+    background: #0f3460; /* Fondo de cada ítem */
+    border-radius: 8px;
+    border-left: 5px solid #4cc9f0; /* Borde lateral celeste */
+    color: #a8dadc;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s ease, border-left 0.3s ease;
+}
+
+/* Estilo para listas ordenadas */
+ol li {
+    border-left: 5px solid #7209b7; /* Borde violeta para listas ordenadas */
+}
+
+/* Icono personalizado para cada item */
+ul li::before, ol li::before {
+    content: '🐾'; /* Icono de huella */
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #4cc9f0; /* Color del icono */
+}
+
+/* Efecto hover en los items */
+ul li:hover, ol li:hover {
+    background: #16213e; /* Fondo más claro */
+    border-left: 5px solid #f72585; /* Cambia el color del borde en hover */
+}
+
+/* Form Styles */
+form {
+    margin-top: 30px;
+    padding: 20px;
+    background: #212f45; /* Fondo oscuro del formulario */
+    border: 1px solid #7209b7; /* Borde violeta */
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #4cc9f0; /* Borde celeste claro */
+    border-radius: 5px;
+    font-size: 1em;
+    color: #f1faee; /* Texto claro */
+    background: #0f3460; /* Fondo oscuro */
+}
+
+button {
+    display: inline-block;
+    padding: 10px 15px;
+    background: linear-gradient(45deg, #3a86ff, #7209b7); /* Degradado de celeste a violeta */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #4cc9f0, #f72585); /* Degradado con colores más intensos */
+}
+
+/* Footer Styles */
+footer {
+    background: #0f3460;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #a8dadc;
+}
+
+footer a {
+    color: #4cc9f0; /* Celeste claro */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f72585; /* Magenta */
+}
+
